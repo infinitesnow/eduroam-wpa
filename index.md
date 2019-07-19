@@ -34,6 +34,8 @@ network={
 }
 ```
 
+`XXXXXXXX` is your 8-digit Person Code (10XXXXXX).
+
 `ca.pem` is in `/etc/ssl/certs/DigiCert_Assured_ID_Root_CA.pem` on Debian, otherwise it can be extracted from the  official `eduroam-linux-PdM-polimi-TLS.py` installer: 
 
 ```perl -e '$f=join("",<>); print $& if $f=~/-+BEGIN CERTIFICATE-+(\n.*)*-+END CERTIFICATE-+/m' eduroam-linux-PdM-polimi-TLS.py > /path/to/ca.pem```
